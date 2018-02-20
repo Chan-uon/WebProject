@@ -33,13 +33,14 @@ body {
   transition: color 0.5s;
 }
 
-.mainnav a:active, a:hover {
+.mainnav a:link, a:visited {
+  text-decoration: none;
+}
+
+.mainnav a:active, a:hover , a.active {
   background-color: #FFF;
   border-color: #0000FF;
   color: #0000FF;
-}
-.mainnav a:link, a:visited {
-  text-decoration: none;
 }
 
 .dot {
