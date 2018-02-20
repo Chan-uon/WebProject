@@ -33,7 +33,7 @@ body {
   transition: color 0.5s;
 }
 
-.main a:active, a:hover {
+.mainnav a:active, a:hover {
   background-color: #FFF;
   border-color: #0000FF;
   color: #0000FF;
