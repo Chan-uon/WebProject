@@ -1,7 +1,58 @@
 /****** General Styles *********/
+html {
+  font-size: 62.5%; /* for rem */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
 
 /****** Header Style *********/
 
 /****** Navigation Style *********/
+.mainnav {
+  background-color: #000;
+  overflow: hidden;
+  text-align:center;
+}
 
+.mainnav li {
+  display:inline;
+}
+
+.mainnav a {
+  color: #FFF;
+  border: .01em solid transparent;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.5;/* unitless */
+  padding: .7em 1.12em;
+  text-decoration:none;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+.main a:active, a:hover {
+  background-color: #FFF;
+  border-color: #0000FF;
+  color: #0000FF;
+}
+.mainnav a:link, a:visited {
+  text-decoration: none;
+}
+
+.dot {
+  cursor: pointer;
+  background-color: #bfbfbf;
+  border-radius: 50%;
+  display: inline-block;
+  height: 1.5em;
+  width: 1.5em;
+  transition: background-color 0.5s;
+}
+
+.dot:active, .dot:hover {
+  background-color: #404040;
+}
 /****** Footer Style *********/
