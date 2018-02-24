@@ -27,6 +27,7 @@ webproject.MyStyler = {
   *remove a class from the non-active link.
   *@param {object} e - Event object.
   *@param {object} node - The DOM node.
+  *@param {string} tag - The tag name.
   *@param {string} name - The class's name.
   */
   setActiveLink: function(e, node, tag, name) {
