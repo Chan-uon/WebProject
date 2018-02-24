@@ -2,8 +2,8 @@ function initializeHandlers() {
 
 window.addEventListener("click", function(e){
   webproject.MyStyler.setActiveLink(e,
-    document.getElementById("mainnav").
-    getElementsByTagName("a"),
+    document.getElementById("mainnav"),
+    "a",
     "active");},
   false)};
 
