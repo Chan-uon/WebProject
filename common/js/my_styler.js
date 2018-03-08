@@ -1,7 +1,7 @@
 /**
 *Namespace constructor
 */
-var webproject = {};
+var webproject = webproject || {};
 
 webproject.MyStyler = {
   /**
@@ -40,7 +40,6 @@ webproject.MyStyler = {
           nodelist[i].classList.remove(name);
           e.target.classList.add(name);
       }
-console.log(e.target);
     }
   }
 };

@@ -33,11 +33,11 @@ body {
   transition: color 0.5s;
 }
 
-.mainnav a:link, a:visited {
+.mainnav a:link, .mainnav a:visited {
   text-decoration: none;
 }
 
-.mainnav a:active, a:hover , a.active {
+.mainnav a:active, .mainnav a:hover , .mainnav a.active {
   background-color: #FFF;
   border-color: #0000FF;
   color: #0000FF;
@@ -55,5 +55,44 @@ body {
 
 .dot:active, .dot:hover {
   background-color: #404040;
+}
+
+/****** Slider Style *********/
+.slideshow-container {
+  margin: auto;
+  max-width: 80%;
+  position: relative;
+}
+
+.mySlides {
+ display: none;
+}
+
+.mySlides img {
+  height: auto;
+  width: 100%;
+}
+
+.prev, .next {
+  color: #FFF;
+  cursor: pointer;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: -1.3em;
+  padding: .8em;
+  position: absolute;
+  top: 50%;
+  transition: 0.5s ease;
+  width: auto;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: #FFF;
+  opacity: .4;
+  color: #000;
 }
 /****** Footer Style *********/
