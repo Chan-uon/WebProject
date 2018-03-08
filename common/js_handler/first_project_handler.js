@@ -1,8 +1,8 @@
 function initializeHandlers() {
 
-window.addEventListener("click", function(e){
+document.getElementById("mainnav").addEventListener("click", function(e){
   webproject.MyStyler.setActiveLink(e,
-    document.getElementById("mainnav"),
+    this,
     "a",
     "active");},
   false)};

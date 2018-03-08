@@ -34,11 +34,13 @@ webproject.MyStyler = {
   var nodelist = node.getElementsByTagName(tag);
     for(var i = 0; i < nodelist.length; i++){
       if(nodelist[i].classList.contains(name)
-        && node.contains(e.target)){
+        && node.contains(e.target)
+        && e.target.tagName !== "UL"
+        && e.target.tagName !== "NAV") {
           nodelist[i].classList.remove(name);
           e.target.classList.add(name);
       }
-   }
-
+console.log(e.target);
+    }
   }
 };
